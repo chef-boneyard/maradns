@@ -43,8 +43,8 @@ template "/etc/maradns/mararc" do
 end
 
 # be sure to create the db.domain template.
-template "/etc/maradns/db.#{node[:domain]}" do
-  source "db.#{node[:domain]}.erb"
+template "/etc/maradns/db.#{node['domain']}" do
+  source "db.#{node['domain']}.erb"
   mode 0644
   owner "root"
   group "root"
