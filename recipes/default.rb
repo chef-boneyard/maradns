@@ -39,7 +39,7 @@ template "/etc/maradns/mararc" do
   mode 0644
   owner "root"
   group "root"
-  notifies :restart, resources(:service => "maradns")
+  notifies :restart, 'service[maradns]'
 end
 
 # be sure to create the db.domain template.
@@ -48,5 +48,5 @@ template "/etc/maradns/db.#{node[:domain]}" do
   mode 0644
   owner "root"
   group "root"
-  notifies :restart, resources(:service => "maradns")
+  notifies :restart, 'service[maradns]'
 end
