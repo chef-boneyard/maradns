@@ -17,28 +17,28 @@
 # limitations under the License.
 #
 
-package "maradns" do
+package 'maradns' do
   action :upgrade
 end
 
-service "maradns" do
+service 'maradns' do
   action :enable
   supports(
-    :restart => true,
-    :status => true
+    restart: true,
+    status: true
   )
 end
 
-service "zoneserver" do
+service 'zoneserver' do
   action :disable
-  supports :restart => true
+  supports restart: true
 end
 
-template "/etc/maradns/mararc" do
-  source "mararc.erb"
+template '/etc/maradns/mararc' do
+  source 'mararc.erb'
   mode 0644
-  owner "root"
-  group "root"
+  owner 'root'
+  group 'root'
   notifies :restart, 'service[maradns]'
 end
 
@@ -46,7 +46,7 @@ end
 template "/etc/maradns/db.#{node[:domain]}" do
   source "db.#{node[:domain]}.erb"
   mode 0644
-  owner "root"
-  group "root"
+  owner 'root'
+  group 'root'
   notifies :restart, 'service[maradns]'
 end
