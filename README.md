@@ -1,5 +1,7 @@
-Description
-===========
+maradns Cookbook
+================
+[![Build Status](https://travis-ci.org/chef-cookbooks/maradns.svg?branch=master)](http://travis-ci.org/chef-cookbooks/xml)
+[![Cookbook Version](https://img.shields.io/cookbook/v/maradns.svg)](https://supermarket.chef.io/cookbooks/xml)
 
 Installs and configures maradns.
 
@@ -47,7 +49,7 @@ License and Author
 
 Author:: Joshua Timberman <joshua@chef.io>
 
-Copyright:: 2009-2010, Chef Software, Inc
+Copyright:: 2009-2015, Chef Software, Inc
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
