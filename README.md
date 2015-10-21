@@ -30,15 +30,8 @@ Recipes
 Installs the maradns package, manages the `maradns` and `zoneserver`
 services and writes out the configuration files.
 
-Resources/Providers
--------------------
-
-None yet. See __Roadmap__.
-
-
 Usage
 -----
-
 In order to use this recipe, create the DNS entry configuration file
 as `templates/default/db.DOMAIN.erb`, where `DOMAIN` is the domain
 detected by `ohai` on the node. For example, if the node's domain is
