@@ -5,35 +5,39 @@ maradns Cookbook
 
 Installs and configures maradns.
 
+
 Requirements
-============
+------------
+#### Platforms
+- Debian/Ubuntu
 
-## Platform:
+#### Chef
+- Chef 11+
 
-* Debian/Ubuntu
+#### Cookbooks
+- None
 
 Attributes
-==========
+----------
 
 * `node['maradns']['recursive_acl']` -
 
 Recipes
-=======
-
-default
 -------
+
+###default
 
 Installs the maradns package, manages the `maradns` and `zoneserver`
 services and writes out the configuration files.
 
 Resources/Providers
-===================
+-------------------
 
 None yet. See __Roadmap__.
 
 
 Usage
-=====
+-----
 
 In order to use this recipe, create the DNS entry configuration file
 as `templates/default/db.DOMAIN.erb`, where `DOMAIN` is the domain
@@ -44,13 +48,14 @@ this configuration.
 
 * http://www.maradns.org/notes.html
 
-License and Author
-==================
+License & Authors
+-----------------
 
-Author:: Joshua Timberman <joshua@chef.io>
+**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
 
-Copyright:: 2009-2015, Chef Software, Inc
+**Copyright:** 2009-2015, Chef Software, Inc.
 
+```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -62,3 +67,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+```
