@@ -27,8 +27,8 @@ service 'maradns' do
   )
 end
 
-service 'zoneserver' do
-  action :disable
+service 'maradns-zoneserver' do
+  action [:disable, :stop]
   supports restart: true
 end
 
