@@ -13,13 +13,3 @@ end
 
 source_url 'https://github.com/chef-cookbooks/maradns' if respond_to?(:source_url)
 issues_url 'https://github.com/chef-cookbooks/maradns/issues' if respond_to?(:issues_url)
-
-attribute 'maradns',
-  display_name: 'MaraDNS',
-  description: 'Hash of MaraDNS attributes',
-  type: 'hash'
-
-attribute 'maradns/recursive_acl',
-  display_name: 'MaraDNS Recursive ACL',
-  description: 'Sets the recursive_acl setting in mararc.erb',
-  default: ''

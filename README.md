@@ -1,50 +1,43 @@
-maradns Cookbook
-================
-[![Build Status](https://travis-ci.org/chef-cookbooks/maradns.svg?branch=master)](http://travis-ci.org/chef-cookbooks/xml)
-[![Cookbook Version](https://img.shields.io/cookbook/v/maradns.svg)](https://supermarket.chef.io/cookbooks/xml)
+# maradns Cookbook
+
+[![Build Status](https://travis-ci.org/chef-cookbooks/maradns.svg?branch=master)](http://travis-ci.org/chef-cookbooks/xml) [![Cookbook Version](https://img.shields.io/cookbook/v/maradns.svg)](https://supermarket.chef.io/cookbooks/xml)
 
 Installs and configures maradns.
 
+## Requirements
 
-Requirements
-------------
-#### Platforms
-- Debian/Ubuntu
+### Platforms
 
-#### Chef
+- Debian 7 (8 has no maradns package)
+- Ubuntu 12.04+
+
+### Chef
+
 - Chef 11+
 
-#### Cookbooks
+### Cookbooks
+
 - None
 
-Attributes
-----------
+## Attributes
 
-* `node['maradns']['recursive_acl']` -
+- `node['maradns']['recursive_acl']` -
 
-Recipes
--------
+## Recipes
 
-###default
+### default
 
-Installs the maradns package, manages the `maradns` and `zoneserver`
-services and writes out the configuration files.
+Installs the maradns package, manages the `maradns` and `zoneserver` services and writes out the configuration files.
 
-Usage
------
-In order to use this recipe, create the DNS entry configuration file
-as `templates/default/db.DOMAIN.erb`, where `DOMAIN` is the domain
-detected by `ohai` on the node. For example, if the node's domain is
-`example.com`, the file would be `db.example.com.erb`. Refer to the
-maradns zone file documentation for more information on how to write
-this configuration.
+## Usage
 
-* http://www.maradns.org/notes.html
+In order to use this recipe, create the DNS entry configuration file as `templates/default/db.DOMAIN.erb`, where `DOMAIN` is the domain detected by `ohai` on the node. For example, if the node's domain is `example.com`, the file would be `db.example.com.erb`. Refer to the maradns zone file documentation for more information on how to write this configuration.
 
-License & Authors
------------------
+- <http://www.maradns.org/notes.html>
 
-**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
+## License & Authors
+
+**Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
 **Copyright:** 2009-2015, Chef Software, Inc.
 
