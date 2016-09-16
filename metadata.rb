@@ -11,5 +11,6 @@ recipe 'maradns', 'Installs and configures maradns'
   supports os
 end
 
-source_url 'https://github.com/chef-cookbooks/maradns' if respond_to?(:source_url)
-issues_url 'https://github.com/chef-cookbooks/maradns/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/chef-cookbooks/maradns'
+issues_url 'https://github.com/chef-cookbooks/maradns/issues'
+chef_version '>= 12.1'
