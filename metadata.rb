@@ -3,7 +3,7 @@ maintainer        'Chef Software, Inc.'
 maintainer_email  'cookbooks@chef.io'
 license           'Apache 2.0'
 description       'Installs and configures maradns'
-version           '1.0.1'
+version           '2.0.0'
 
 recipe 'maradns', 'Installs and configures maradns'
 

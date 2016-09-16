@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the maradns cookbook.
 
+## 2.0.0 (2016-09-16)
+- Testing updates
+- Require Chef 12.1
+
 ## v1.0.1 (2016-04-29):
 
 - Remove testing on Debian 8 and note that it is not a supported platform as there are no maradns packages for Debian 8
