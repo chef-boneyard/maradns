@@ -1,6 +1,6 @@
 # maradns Cookbook
 
-[![Build Status](https://travis-ci.org/chef-cookbooks/maradns.svg?branch=master)](http://travis-ci.org/chef-cookbooks/xml) [![Cookbook Version](https://img.shields.io/cookbook/v/maradns.svg)](https://supermarket.chef.io/cookbooks/xml)
+[![Build Status](https://travis-ci.org/chef-cookbooks/maradns.svg?branch=master)](http://travis-ci.org/chef-cookbooks/maradns) [![Cookbook Version](https://img.shields.io/cookbook/v/maradns.svg)](https://supermarket.chef.io/cookbooks/maradns)
 
 Installs and configures maradns.
 
